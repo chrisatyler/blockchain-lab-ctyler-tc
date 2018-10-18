@@ -9,8 +9,6 @@
     "networkImageanimated": "https://hyperledger.github.io/composer-sample-networks/packages/perishable-network/networkimageanimated.svg",
     "scripts": {
         "prepublish": "mkdirp ./dist && composer archive create  --sourceType dir --sourceName . -a ./dist/iot-perishable-network.bna",
-        "pretest": "npm run lint",
-        "lint": "eslint .",
         "postlint": "npm run licchk",
         "licchk": "license-check-and-add",
         "postlicchk": "npm run doc",
@@ -38,7 +36,7 @@
         "composer-client": "^0.19.0-0",
         "composer-common": "^0.19.0-0",
         "composer-connector-embedded": "^0.19.0-0",
-        "eslint": "^3.6.1",
+        "eslint": "latest",
         "istanbul": "^0.4.5",
         "jsdoc": "^3.5.5",
         "license-check-and-add": "~2.3.0",
